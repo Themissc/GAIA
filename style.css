@@ -1,0 +1,224 @@
+/*This is the main stylesheet*::after
+/*colour scheme*::after
+/*dark brown #87590B  rgb(135, 89, 11)
+/*red #C92724  rgb(201, 39, 36)
+/*black #000  rgb(0, 0, 0) 
+/*Raisin Black #262626  rgb(38, 38, 38) */
+/*White #ffffff  rgb(255,255,255) */
+/*Blizzard Blue #AEE1EE rgb(174,225,238); */
+/*Light Sea Green  #22C1C3  rgb(34,193,195) */
+
+
+
+
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the entire page */
+html, body {
+  height: 100%; 
+}
+
+/* Apply a flex layout to the body to push the footer to the bottom */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for the main content area (pushing footer down) */
+.bg-white {
+  flex: 1;
+}
+
+/* Style for the footer */
+.footer {
+  background-color: #262626; /* Customize the background color */
+  color: #ffffff; /* Customize the text color */
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+}
+
+
+
+.bg-white{
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+padding: 50px;
+}
+.brown{
+  color: #87590B;
+}
+
+nav{
+  background: radial-gradient(circle, rgba(174,225,238,1) 25%, rgba(148,187,233,1) 89%);
+  border:1px solid #dedede;
+  color: #ffffff;
+  display: block;
+  overflow:hidden;
+  width:100%;
+}
+
+nav ul li{
+  display:inline-block;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #000;
+  display: block;
+  line-height: 56px;
+  text-decoration:none;
+  padding: 10px;
+}
+
+nav ul li:hover{
+  background-color: #000;
+}
+nav ul li:hover a{
+  color:red;
+}
+
+
+
+
+
+nav{
+  background-color:rgb(0, 255, 255);
+  border:1px solid #dedede;
+  color: #ffffff;
+  display: block;
+  overflow:hidden;
+  width:100%;
+}
+
+nav ul li{
+  display:inline-block;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #000;
+  display: block;
+  line-height: 56px;
+  text-decoration:none;
+  padding: 10px;
+}
+
+nav ul li:hover{
+  background-color:rgb(0, 0, 0);
+}
+nav ul li:hover a{
+  color:red;
+}
+
+
+
+/*tells the browser to account for any border and padding in */
+/*the values you specify for an element's width and height*/
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other 
+*/
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns If an element is taller than the */
+/*element containing it, and it is floated, it will overflow outside of its container.*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+/****This is style for tablet****/
+@media screen and (max-width: 992px){
+
+.bg-white{
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);;
+padding: 50px;
+}
+.brown{
+  color: #87590B;
+}
+
+}
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+    min-height: 400px;
+  }
+}
+/****This is style for mobile****/
+@media screen and (max-width: 600px){
+
+.bg-white{
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+padding: 50px;
+}
+.brown{
+  color: #87590B;
+}
+
+}
+
+
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+footer{
+  background-color:rgb(38, 38, 38);
+  color:#ffffff;
+  text-align: center;
+  padding: 3px;}
+
+/* Style for the images with rounded corners */
+div.gallery img.logo,
+.rounded-image {
+  width: 150px; /* Set the desired width for the images */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 50%; /* 50% creates a circle, you can adjust this value */
+  margin: 10px; /* Add some spacing between images */
+}
+ 
+
+/* Style for the gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery .column {
+  flex: 1;
+  padding: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px; /* Add rounded corners to images */
+  margin-bottom: 10px; /* Add some spacing between images */
+}
